@@ -1,0 +1,66 @@
+version: "3.1"
+
+intents:
+  - chat_with_ai
+  - greet
+  - goodbye
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - affirm
+  - deny
+  - chitchat  
+
+responses:
+  utter_greet:
+    - text: "Hello! 😊 How can I assist you today?"
+    - text: "Hi there! How can I help?"
+    - text: "Hey! Need any assistance?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day! 👋"
+    - text: "See you later! Take care! 😊"
+    - text: "Bye! Let me know if you need help again."
+
+  utter_mood_great:
+    - text: "That's awesome! 😃 Keep up the good vibes!"
+    - text: "Glad to hear that! What can I do for you?"
+    - text: "You're feeling great? Love that energy! 🔥"
+
+  utter_mood_unhappy:
+    - text: "Oh no! 😔 I'm here for you. Want to talk about it?"
+    - text: "I'm sorry to hear that. Do you need any help?"
+    - text: "Cheer up! 🌟 Everything will be fine. Need some advice?"
+
+  utter_bot_challenge:
+    - text: "I'm your AI assistant 🤖, here to help!"
+    - text: "Yep, I'm a chatbot! But I try to be as helpful as a human!"
+    - text: "I am an AI, but I can chat with you like a real person!"
+
+  utter_affirm:
+    - text: "Great! 👍 What’s next?"
+    - text: "Awesome! 😊 Let’s continue!"
+    - text: "Alright! What do you need help with?"
+
+  utter_deny:
+    - text: "No worries! Let me know if you change your mind."
+    - text: "Alright, if you need anything, I'm here!"
+    - text: "Got it! Let me know if you need anything else."
+
+  utter_chitchat:
+    - text: "I love chatting! 😊 Tell me what’s on your mind!"
+    - text: "Chatting with me? Sounds fun! What do you want to talk about?"
+    - text: "I’m here to chat! What’s up?"
+
+  utter_cheer_up:
+    - text: "Don’t worry, things will get better! 🌈"
+    - text: "Here’s something to cheer you up! 🎉"
+
+actions:
+  - chat_with_ai # ✅ Ensured it’s properly included
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
